@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
       <footer>
-        <p>Find me on GitHub, LinkedIn, and Stack Overflow</p>
+        <p>Find me on GitHub and LinkedIn</p>
       </footer>
     );
   };
