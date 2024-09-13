@@ -1,7 +1,12 @@
 const Footer = () => {
     return (
       <footer>
-        <p>Find me on GitHub and LinkedIn</p>
+        <p>Connect with me:</p>
+        <ul>
+          <li><a href="https://github.com/ColinBurner" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/colin-taaffe" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="https://x.com/Burner_MN">Follow me on X!</a></li>
+        </ul>
       </footer>
     );
   };
