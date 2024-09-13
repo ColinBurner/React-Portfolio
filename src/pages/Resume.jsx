@@ -1,7 +1,11 @@
 const Resume = () => {
     return (
-      <section>
-        <h2>Resume Coming Soon!</h2>
+      <section className="resume-section">
+        <h2>
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          Resume Coming Soon!
+        </a>
+      </h2>
        
         <h3>Proficiencies:</h3>
         <ul>

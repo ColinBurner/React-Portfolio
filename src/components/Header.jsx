@@ -34,7 +34,7 @@ const Header = () => {
 
     return (
         <header className="main-header">
-            <h1>Colin 'Burner' Taaffe</h1>
+            <h1 className="gradient-text">Colin 'Burner' Taaffe</h1>
             <nav>
                 <ul className="nav-links">
                     <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} end>About Me</NavLink></li>

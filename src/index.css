@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #272727;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,11 +15,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ffffff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #eb4a00;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #1a1a1d;
+  background-color: #c55427;
   color: #f4f4f4;
 }
 
@@ -47,6 +47,18 @@ h1, h2, h3 {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+h2 {
+  text-shadow: 2px 2px 2px black;
+}
+
+h3 {
+  text-shadow: 2px 2px 2px black;
+}
+
+ul {
+  text-shadow: 2px 2px 2px black;
 }
 
 button {
@@ -68,10 +80,17 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+header {
+  background-color: black;
+  border-radius: 50px;
+  border: 5px solid rgb(250, 111, 31);
+}
+
 header nav ul {
   display: flex;
   list-style: none;
   gap: 1rem;
+  font-size: 28px;
 }
 
 header nav ul li a {
@@ -95,11 +114,19 @@ p {
   font-family: "Nerko One", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 22px;
+  font-size: 28px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,104,16,1) 50%, rgba(255,0,0,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .main-header {
-  background-color: #333;
   padding: 1rem;
   opacity: 1 !important;
   position: sticky;
@@ -135,12 +162,12 @@ p {
 }
 
 .nav-links a.active {
-  color: #f39c12;
+  color: #f36412;
   font-weight: bold;
 }
 
 .nav-links a:hover {
-  color: #f39c12;
+  color: #ff590d;
   transform: scale(1.1);
 }
 
@@ -169,11 +196,12 @@ p {
 
 .profile-pic {
   border-radius: 50%;
-  border: 5px solid #f39c12; 
+  border: 5px solid black; 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
   width: 220px;
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .profile-pic:hover {
@@ -189,17 +217,45 @@ p {
   animation: fadeIn 2s ease-in-out; 
 }
 
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px;
+}
+
+.resume-section h2, .resume-section h3 {
+  margin-bottom: .5rem;
+}
+
+.resume-section ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.resume-section li {
+  font-size: 1.5rem; 
+  margin: 0.5rem 0;
+}
+
 footer.main-footer {
-  background-color: #333;
+  background-color: #000000;
   color: #f4f4f4;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
   margin-top: auto;
   position: absolute;
   width: 100%;
   position: relative;
   left: 0; 
   margin: 0; 
+  border-radius: 50px;
+  border: 5px solid rgb(250, 111, 31);
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .main-footer ul {
@@ -211,15 +267,18 @@ footer.main-footer {
 }
 
 .main-footer a {
-  color: #f39c12;
+  color: #f36412;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s;
+  font-size: 36px;
+  padding: 20px;
 }
 
 .main-footer a:hover {
   text-decoration: underline;
   transform: translateY(-2px);
+  color: rgb(255, 249, 247);
 }
 
 /* Fade-in animation */

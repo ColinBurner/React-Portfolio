@@ -46,7 +46,7 @@ const About = () => {
           className="profile-pic"
         />
         <p>
-          Welcome! I am Colin Taaffe and I created this portfolio in the U of M coding bootcamp! I am a father, an avid gamer and I have 3 cats (Ragnar is the one pictured!) 
+          Welcome! My name is Colin and I created this portfolio in the University of Minnesota coding bootcamp! I am a father, an avid gamer and I have 3 cats (Ragnar is the one pictured!) 
           I have been interested in web development since the days of adjusting my own HTML on MySpace. 
           I spent almost 20 years working in production/warehouse management before finally deciding it was time to find a career that I felt fulfilled me. 
         </p>
