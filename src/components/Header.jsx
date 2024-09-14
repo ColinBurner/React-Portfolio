@@ -30,23 +30,22 @@ const Header = () => {
             });
         });
     
-        // Flash animation for the header title
+        // Pulsing glow effect
         const title = document.querySelector(".gradient-text");
         if (title) {
             gsap.to(title, {
-                opacity: 0.8,
-                duration: 1.7,
+                textShadow: "0px 0px 20px rgba(255, 104, 16, 1)",
+                duration: 1.5,
                 yoyo: true,
-                repeat: -1, 
-                ease: "power1.inOut",
-                repeatRefresh: true 
+                repeat: -1,
+                ease: "power1.inOut"
             });
         }
     }, []);
 
     return (
         <header className="main-header">
-            <h1 className="gradient-text">Colin 'Burner' Taaffe</h1>
+            <h1 className="gradient-text">Colin 'Burner' Taaffe"</h1>
             <nav>
                 <ul className="nav-links">
                     <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} end>About Me</NavLink></li>

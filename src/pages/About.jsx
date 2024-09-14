@@ -49,6 +49,7 @@ const About = () => {
           Welcome! My name is Colin and I created this portfolio in the University of Minnesota coding bootcamp! I am a father, an avid gamer and I have 3 cats (Ragnar is the one pictured!) 
           I have been interested in web development since the days of adjusting my own HTML on MySpace. 
           I spent almost 20 years working in production/warehouse management before finally deciding it was time to find a career that I felt fulfilled me. 
+          I am experienced in both front and back end technologies. I do my best to continue to learn as much as I can to improve my skills as a developer.
         </p>
       </section>
     );
