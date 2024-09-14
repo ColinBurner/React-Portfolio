@@ -33,7 +33,7 @@ Under Photos you will see some fun photos of me, my son and my cats!
 
 ## Visuals
 
-Deployed application: 
+Deployed Application: [Deployed application](https://tourmaline-macaron-a20f21.netlify.app/)
 
 ![about me screenshot](https://github.com/user-attachments/assets/00e1b7ec-9c0f-4f4b-9beb-08a39283a329)
 
