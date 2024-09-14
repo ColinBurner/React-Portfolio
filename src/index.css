@@ -192,6 +192,7 @@ label {
 .about-section {
   max-width: 800px;
   margin: 0 auto;
+  margin-bottom: 25px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -300,7 +301,7 @@ label {
 
 .contact-section input,
 .contact-section textarea {
-  width: 100%;
+  width: 650px;
   max-width: 650px;
   padding: 0.75rem;
   border-radius: 5px;
@@ -565,7 +566,7 @@ footer.main-footer {
 
   .contact-section input,
   .contact-section textarea {
-    max-width: 100%; 
+    max-width: 99%; 
   }
 
   .profile-pic {
