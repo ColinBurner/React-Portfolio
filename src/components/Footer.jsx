@@ -60,7 +60,7 @@ const Footer = () => {
           <ul>
             <li><a href="https://github.com/ColinBurner" target="_blank" rel="noreferrer"><img src="/Github.png" alt="GitHub" className="footer-icon" /></a></li>
             <li><a href="https://linkedin.com/in/colin-taaffe" target="_blank" rel="noreferrer"><img src="/LinkedIn.png" alt="LinkedIn" className="footer-icon" /></a></li>
-            <li><a href="https://x.com/Burner_MN" target="_blank" rel="noreferrer"><img src="/X.png" alt="X" className="footer-icon" /></a></li>
+            <li><a href="https://x.com/Burner_MN" target="_blank" rel="noreferrer"><img src="/X.png" alt="X" className="footer-icon x-icon" /></a></li>
           </ul>
           <button className="explode-button" onClick={handleExplosion}>Definitely Don't Click Me 🤫</button> 
         </footer>

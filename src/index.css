@@ -384,9 +384,16 @@ footer.main-footer {
 }
 
 .footer-icon {
-  width: 50px;  
-  height: auto; 
+  width: 60px;  
+  height: 75px; 
+  object-fit: contain; 
+  margin: 0 10px; 
   transition: transform 0.3s ease;
+}
+
+.footer-icon.x-icon {
+  width: 100px; 
+  height: 78px;
 }
 
 .projects {
@@ -458,6 +465,33 @@ footer.main-footer {
   font-weight: bold;
   transform: scale(1.05);
   border: none;
+}
+
+.photos-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1rem; 
+  justify-content: center; 
+  margin-top: 2rem;
+}
+
+.photo {
+  width: 100%; 
+  max-width: 250px; 
+  aspect-ratio: 3/4; 
+  object-fit: cover; 
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.6);
 }
 
 /* Fade-in animation */
