@@ -566,7 +566,8 @@ footer.main-footer {
 
   .contact-section input,
   .contact-section textarea {
-    max-width: 40%; 
+    width: 92vw;
+    padding: 1rem;
   }
 
   .profile-pic {
