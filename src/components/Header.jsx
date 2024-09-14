@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
+import DarkModeToggle from './DarkModeToggle';
 
 const Header = () => {
     useLayoutEffect(() => {
@@ -55,6 +56,7 @@ const Header = () => {
                     <li><NavLink to="/photos" className={({ isActive }) => isActive ? 'active' : ''}>Photos</NavLink></li>
                 </ul>
             </nav>
+            <DarkModeToggle />
         </header>
     );
 };
