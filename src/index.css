@@ -192,7 +192,7 @@ label {
 .about-section {
   max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   text-align: center;
   display: flex;
   flex-direction: column;
