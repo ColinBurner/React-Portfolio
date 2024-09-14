@@ -8,7 +8,6 @@ const Header = () => {
 
         // Add hover animation for each list item
         navLinks.forEach((link) => {
-            // On mouse enter - wiggle/dance effect
             link.addEventListener("mouseenter", () => {
                 gsap.to(link, {
                     rotation: 3,  
@@ -30,6 +29,19 @@ const Header = () => {
                 });
             });
         });
+    
+        // Flash animation for the header title
+        const title = document.querySelector(".gradient-text");
+        if (title) {
+            gsap.to(title, {
+                opacity: 0.8,
+                duration: 1.7,
+                yoyo: true,
+                repeat: -1, 
+                ease: "power1.inOut",
+                repeatRefresh: true 
+            });
+        }
     }, []);
 
     return (

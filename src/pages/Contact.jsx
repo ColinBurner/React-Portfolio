@@ -1,8 +1,11 @@
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const validateEmail = (email) => {
     return /\S+@\S+\.\S+/.test(email);
@@ -31,12 +34,25 @@ const Contact = () => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      console.log('Form data submitted:', formData);
+      // Send email via EmailJS
+      emailjs
+        .send('service_fj1cxxt', 'template_fg02s5f', formData, 'XUyTG6lJRcAX7XPwH')
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          setSuccessMessage('Your message has been sent!');
+          setErrorMessage(''); 
+          setFormData({ name: '', email: '', message: '' }); 
+        })
+        .catch((err) => {
+          console.log('FAILED...', err);
+          setErrorMessage('Failed to send message. Please try again later.');
+          setSuccessMessage(''); 
+        });
     }
   };
 
   return (
-    <section>
+    <section className="contact-section">
       <h2>Contact Me!</h2>
       <form onSubmit={handleSubmit}>
         <label>Name:</label>
@@ -66,6 +82,10 @@ const Contact = () => {
         {errors.message && <span>{errors.message}</span>}
 
         <button type="submit">Submit</button>
+
+        {/* Show success or error messages */}
+        {successMessage && <p style={{ color: 'OrangeRed', marginTop: '1rem' }}>{successMessage}</p>}
+        {errorMessage && <p style={{ color: 'red', marginTop: '1rem' }}>{errorMessage}</p>}
       </form>
     </section>
   );
