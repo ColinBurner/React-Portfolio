@@ -18,6 +18,7 @@ a {
   color: #ffffff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #eb4a00;
 }
@@ -30,7 +31,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: radial-gradient(circle, rgba(255,72,0,1) 9%, rgba(255,104,16,1) 50%, rgba(255,0,0,1) 89%);
+  background: radial-gradient(circle, rgba(255, 72, 0, 1) 9%, rgba(255, 104, 16, 1) 50%, rgba(255, 0, 0, 1) 89%);
   color: #f4f4f4;
 }
 
@@ -43,7 +44,9 @@ h1 {
   line-height: 1.1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
@@ -74,9 +77,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -103,7 +108,7 @@ header nav ul li a {
 
 header nav ul li a.active {
   font-weight: bold;
-  color: #e65d1e; 
+  color: #e65d1e;
 }
 
 ul {
@@ -129,7 +134,7 @@ label {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,104,16,1) 50%, rgba(255,0,0,1) 100%);
+  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 104, 16, 1) 50%, rgba(255, 0, 0, 1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -189,9 +194,9 @@ label {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh; 
-  text-align: center; 
-  margin: 0 auto; 
+  height: 80vh;
+  text-align: center;
+  margin: 0 auto;
   min-height: calc(100vh - 150px);
 }
 
@@ -204,11 +209,11 @@ label {
 
 .profile-pic {
   border-radius: 50%;
-  border: 5px solid black; 
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  border: 5px solid black;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   width: 220px;
   margin-bottom: 1.5rem;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -221,13 +226,13 @@ label {
   line-height: 1.8;
   margin: 1.5rem 0;
   max-width: 700px;
-  text-align: justify; 
-  animation: fadeIn 2s ease-in-out; 
-  background-color: rgb(0, 0, 0); 
+  text-align: justify;
+  animation: fadeIn 2s ease-in-out;
+  background-color: rgb(0, 0, 0);
   padding: 20px;
-  border-radius: 15px; 
-  border: 4px outset #ff5100; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  border-radius: 15px;
+  border: 4px outset #ff5100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .resume-section {
@@ -239,18 +244,19 @@ label {
   margin: 40px;
 }
 
-.resume-section h2, .resume-section h3 {
+.resume-section h2,
+.resume-section h3 {
   margin-bottom: .5rem;
 }
 
 .resume-section ul {
-  list-style: none; 
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .resume-section li {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   margin: 0.5rem 0;
 }
 
@@ -259,7 +265,7 @@ label {
   max-width: 750px;
   margin: 0 auto;
   padding: 2rem;
-  background: linear-gradient(90deg, rgb(255, 72, 0) 0%, rgba(255,104,16,1) 50%, rgb(245, 75, 7) 100%);
+  background: linear-gradient(90deg, rgb(255, 72, 0) 0%, rgba(255, 104, 16, 1) 50%, rgb(245, 75, 7) 100%);
   border-radius: 10px;
   border: solid rgba(0, 0, 0, 0.185);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -302,7 +308,7 @@ label {
 }
 
 .contact-section textarea {
-  resize: vertical; 
+  resize: vertical;
 }
 
 .contact-section input:focus,
@@ -348,8 +354,8 @@ footer.main-footer {
   position: absolute;
   width: 100%;
   position: relative;
-  left: 0; 
-  margin: 0; 
+  left: 0;
+  margin: 0;
   border-radius: 50px;
   border: 5px outset rgb(250, 111, 31);
   margin-bottom: 10px;
@@ -380,54 +386,54 @@ footer.main-footer {
 }
 
 .footer-icon:hover {
-  transform: scale(2.5); 
+  transform: scale(2.5);
 }
 
 .footer-icon {
-  width: 60px;  
-  height: 75px; 
-  object-fit: contain; 
-  margin: 0 10px; 
+  width: 60px;
+  height: 75px;
+  object-fit: contain;
+  margin: 0 10px;
   transition: transform 0.3s ease;
 }
 
 .footer-icon.x-icon {
-  width: 100px; 
+  width: 100px;
   height: 78px;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 2rem; 
-  justify-items: center; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
   padding: 2rem;
   margin: 0 auto;
 }
 
 .project-card {
   text-align: center;
-  width: 300px; 
-  background-color: #000; 
-  border-radius: 25px; 
+  width: 300px;
+  background-color: #000;
+  border-radius: 25px;
   box-shadow: 3px 3px 5px black;
   padding: 1rem;
 }
 
 .project-image {
   width: 100%;
-  height: 300px; 
-  object-fit: fill; 
+  height: 300px;
+  object-fit: fill;
   border-radius: 25px;
   margin-bottom: .2rem;
   margin-top: .5rem;
-  background-color: #000; 
+  background-color: #000;
   box-shadow: 3px 3px 5px black;
   transition: transform 0.3s ease-in-out;
 }
 
 .project-image:hover {
-  transform: scale(1.5); 
+  transform: scale(1.5);
 }
 
 .project h3 {
@@ -474,17 +480,17 @@ footer.main-footer {
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 1rem; 
-  justify-content: center; 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-content: center;
   margin-top: 2rem;
 }
 
 .photo {
-  width: 100%; 
-  max-width: 250px; 
-  aspect-ratio: 3/4; 
-  object-fit: cover; 
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgb(0, 0, 0);
   transition: transform 0.3s ease;
@@ -499,12 +505,16 @@ footer.main-footer {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
-.main-header h1, .about-section h2, .about-section p, .profile-pic {
+.main-header h1,
+.about-section h2,
+.about-section p,
+.profile-pic {
   animation: fadeIn 2s ease-in-out;
 }
 
@@ -513,33 +523,132 @@ footer.main-footer {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
 }
 
+/* General mobile adjustments for screens 768px and below */
 @media (max-width: 768px) {
   .main-header h1 {
     font-size: 2rem;
   }
 
   .nav-links {
-    gap: 1rem; /* Reduce gap for mobile */
+    gap: 0.5rem;
+    /* Reduce gap for mobile */
+    flex-direction: column;
+    /* Stack links vertically */
+    align-items: center;
+  }
+
+  .contact-section input,
+  .contact-section textarea {
+    max-width: 100%; 
   }
 
   .profile-pic {
-    width: 150px; /* Smaller image on mobile */
+    width: 150px;
+    /* Smaller image on mobile */
   }
 
   .about-section h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .main-footer ul {
-    flex-direction: column; /* Stack links vertically on mobile */
-    gap: 0.75rem;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns on tablets */
+    gap: 1rem;
+    /* Reduce the gap */
+  }
+
+  .project-card {
+    width: 100%;
+    /* Let the project cards take up full width */
+    max-width: 320px;
+    /* Limit max-width to avoid stretching */
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns for photos on tablets */
+    gap: 0.5rem;
+  }
+
+  .photo {
+    max-width: 100%;
+    /* Let images take up full width */
+  }
+
+  .explode-button {
+    width: 90%;
+    /* Make the explode button more mobile-friendly */
+    max-width: 300px;
+  }
+}
+
+/* Further adjustments for smaller screens (mobile) 480px and below */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    font-size: 1.2rem;
+    /* Reduce font size in mobile nav links */
+  }
+
+  .profile-pic {
+    width: 120px;
+    /* Even smaller for very small devices */
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    /* Single column for projects on small devices */
+    gap: 1rem;
+  }
+
+  .photo-gallery {
+    grid-template-columns: 1fr;
+    /* Single column for photos on mobile */
+    gap: 0.5rem;
+  }
+
+  .explode-button {
+    width: 100%;
+    /* Full width button on mobile */
+    max-width: 250px;
+    font-size: 1rem;
+    /* Reduce font size for mobile */
+  }
+
+  .footer-icon {
+    width: 45px;
+    /* Smaller icons for mobile */
+    height: 45px;
   }
 }
