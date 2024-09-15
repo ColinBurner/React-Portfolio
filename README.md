@@ -41,7 +41,8 @@ Under Comments you will be able to leave a named or anonymous comment in the for
 
 Deployed Application: [Deployed application](https://tourmaline-macaron-a20f21.netlify.app/)
 
-![about me screenshot](https://github.com/user-attachments/assets/00e1b7ec-9c0f-4f4b-9beb-08a39283a329)
+
+![About me home page](https://github.com/user-attachments/assets/4f166661-bbe6-40cd-8b39-f59574c38e32)
 
 This is the about me page that doubles as the home page or the first page you see when coming to my portfolio.
 
