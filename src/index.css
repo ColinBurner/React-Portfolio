@@ -797,6 +797,23 @@ button.leave-comment-btn:hover {
     font-size: 2.8rem;
   }
 
+  .dark-mode-toggle {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: auto;
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .main-header, footer.main-footer {
     width: 94.5vw; 
     left: 0;      
@@ -883,6 +900,16 @@ button.leave-comment-btn:hover {
 
   p {
     font-size: 1.1rem;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dark-mode-toggle {
+    top: 20px;
+    font-size: 1rem;
   }
 
   .about-section h2 {
