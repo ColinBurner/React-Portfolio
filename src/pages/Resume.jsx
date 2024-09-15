@@ -16,6 +16,7 @@ const Resume = () => {
           <li>HTML</li>
           <li>MongoDB</li>
           <li>PostgreSQL</li>
+          <li>GSAP</li>
         </ul>
       </section>
     );
