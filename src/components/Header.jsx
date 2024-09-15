@@ -54,6 +54,7 @@ const Header = () => {
                     <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>Contact</NavLink></li>
                     <li><NavLink to="/resume" className={({ isActive }) => isActive ? 'active' : ''}>Resume</NavLink></li>
                     <li><NavLink to="/photos" className={({ isActive }) => isActive ? 'active' : ''}>Photos</NavLink></li>
+                    <li><NavLink to="/comments" className={({ isActive }) => isActive ? 'active' : ''}>Comments</NavLink></li>
                 </ul>
             </nav>
             <DarkModeToggle />
