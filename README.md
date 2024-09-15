@@ -4,6 +4,8 @@
 
 This is my official portfolio, built using React. It includes links to projects I've worked on, photos and information about me, a way to contact me and links to follow me on social media!
 
+There is also a light/dark mode toggle and a Comments section where visitors can leave a comment on my portfolio that uses Google Firebase to save the comments to the page. As admin (logged in), I can see delete buttons on each comment for easily removing comments if it gets too cluttered.
+
 
 ## Table of Contents
 
@@ -31,6 +33,10 @@ Under resume there is a link that currently goes to Google.com but will eventual
 
 Under Photos you will see some fun photos of me, my son and my cats!
 
+In the Header you have to option to toggle light/dark mode, your browser will remember your selection.
+
+Under Comments you will be able to leave a named or anonymous comment in the form of a random sticky note on my portfolio so don't be afraid to let me know what you like or don't like about my portfolio!
+
 ## Visuals
 
 Deployed Application: [Deployed application](https://tourmaline-macaron-a20f21.netlify.app/)
@@ -46,6 +52,10 @@ This is the Contact page where you can fill out this form in order to send me an
 ![project page](https://github.com/user-attachments/assets/a7820549-1656-4680-8c98-4cb7c60e599c)
 
 This is the Portfolio page with all of my projects!
+
+![Comments screenshot for readme](https://github.com/user-attachments/assets/66697f9c-6790-4c7e-9973-1e25e6d35824)
+
+This is a Comments section where you can leave a little note for me! Only I as admin can see the delete button on these notes and can remove them if need be.
 
 ![dont click the button!](https://github.com/user-attachments/assets/c5b34b92-e358-47a3-aa0a-55646cbf641c)
 
