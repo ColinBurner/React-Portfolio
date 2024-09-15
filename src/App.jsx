@@ -19,7 +19,7 @@ function App() {
   // Check if the user is an admin when the app loads
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
-      if (user && user.email === 'b2rn3r@gmail.com') {
+      if (user && user.email === 'b2rn3r@yahoo.com') {
         setIsAdmin(true);
       } else {
         setIsAdmin(false);

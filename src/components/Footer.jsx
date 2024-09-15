@@ -80,7 +80,7 @@ const Footer = ({ setIsAdmin }) => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            await signInWithEmailAndPassword(auth, email, password);
+            await signInWithEmailAndPassword(auth, email.toLowerCase(), password);
             setShowLogin(false); // Hide login form after successful login
         } catch (err) {
             console.error('Login error: ', err);
