@@ -46,15 +46,15 @@ Deployed Application: [Deployed application](https://tourmaline-macaron-a20f21.n
 
 This is the about me page that doubles as the home page or the first page you see when coming to my portfolio.
 
-![contact me page](https://github.com/user-attachments/assets/422fc2f2-4046-4e76-8428-3565cff485ab)
+![Contact me form in dark mode](https://github.com/user-attachments/assets/bfae4ee0-dd23-4500-b48d-7dd009fc2dbe)
 
-This is the Contact page where you can fill out this form in order to send me an email directly.
+This is the Contact page where you can fill out this form in order to send me an email directly. Notice it is in dark mode for this screenshot.
 
-![project page](https://github.com/user-attachments/assets/a7820549-1656-4680-8c98-4cb7c60e599c)
+![portfolio projects](https://github.com/user-attachments/assets/79ea21a6-d164-4ca8-b12c-34f6d9e461f1)
 
 This is the Portfolio page with all of my projects!
 
-![Comments screenshot for readme](https://github.com/user-attachments/assets/66697f9c-6790-4c7e-9973-1e25e6d35824)
+![comments page](https://github.com/user-attachments/assets/f7e04e52-12b8-43eb-bbd4-711ece9b9f09)
 
 This is a Comments section where you can leave a little note for me! Only I as admin can see the delete button on these notes and can remove them if need be.
 
