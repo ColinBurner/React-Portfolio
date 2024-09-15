@@ -192,8 +192,8 @@ label {
 .about-section {
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 75px;
-  margin-bottom: 75px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -229,7 +229,7 @@ label {
 .about-section p {
   font-size: 1.3rem;
   line-height: 1.8;
-  margin: 1.5rem 0;
+  margin: 2.5rem 0;
   max-width: 700px;
   text-align: justify;
   animation: fadeIn 2s ease-in-out;
@@ -822,7 +822,8 @@ button.leave-comment-btn:hover {
   }
   
   .about-section {
-    margin-top: 100px; 
+    margin-top: 180px; 
+    margin-bottom: 180px;
   }
 
   .nav-links {
