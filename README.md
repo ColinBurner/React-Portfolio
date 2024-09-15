@@ -25,15 +25,17 @@ N/A
 
 Upon first load you will see an about me page with information about me as a developer and a human being accompanied by an image of me and my cat Ragnar! When you click a nav link in the header, you will be taken to that specific view.
 
-Under Portfolio you have links to github repositories and deployed applications that I have worked on in the past.
+The page you are on will be highlighted in the navbar.
+
+Under Projects you have links to github repositories and deployed applications that I have worked on in the past.
 
 Under Contact you have a form you can fill out in order to send me a message directly to my email!
 
-Under resume there is a link that currently goes to Google.com but will eventually lead to my resume when I create/update it along with my proficiencies as a developer.
+Under Resume there is a link that currently goes to Google.com but will eventually lead to my resume when I create/update it along with my proficiencies as a developer.
 
 Under Photos you will see some fun photos of me, my son and my cats!
 
-In the Header you have to option to toggle light/dark mode, your browser will remember your selection.
+In the Header you have the option to toggle light/dark mode, your browser will remember your selection.
 
 Under Comments you will be able to leave a named or anonymous comment in the form of a random sticky note on my portfolio so don't be afraid to let me know what you like or don't like about my portfolio!
 
@@ -42,19 +44,19 @@ Under Comments you will be able to leave a named or anonymous comment in the for
 Deployed Application: [Deployed application](https://tourmaline-macaron-a20f21.netlify.app/)
 
 
-![About me home page](https://github.com/user-attachments/assets/4f166661-bbe6-40cd-8b39-f59574c38e32)
+![about me 1](https://github.com/user-attachments/assets/dab5e3f9-874e-4a79-b6f2-d26d6001b92d)
 
 This is the about me page that doubles as the home page or the first page you see when coming to my portfolio.
 
-![Contact me form in dark mode](https://github.com/user-attachments/assets/bfae4ee0-dd23-4500-b48d-7dd009fc2dbe)
+![contact 1](https://github.com/user-attachments/assets/86c7e48b-a3a5-4851-8462-65da5e9248ac)
 
 This is the Contact page where you can fill out this form in order to send me an email directly. Notice it is in dark mode for this screenshot.
 
-![portfolio projects](https://github.com/user-attachments/assets/79ea21a6-d164-4ca8-b12c-34f6d9e461f1)
+![projects 1](https://github.com/user-attachments/assets/1a0fb302-d8e8-43ea-b9af-743891b33040)
 
-This is the Portfolio page with all of my projects!
+This is the Projects page with featured projects that I have worked on!
 
-![comments page](https://github.com/user-attachments/assets/f7e04e52-12b8-43eb-bbd4-711ece9b9f09)
+![comments 1](https://github.com/user-attachments/assets/9d27625c-0a88-47cb-bc3b-0e3ab1f7e4f4)
 
 This is a Comments section where you can leave a little note for me! Only I as admin can see the delete button on these notes and can remove them if need be.
 

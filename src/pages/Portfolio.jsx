@@ -63,7 +63,7 @@ const Portfolio = () => {
 
     return (
         <section className="portfolio-section">
-            <h2>Portfolio</h2>
+            <h2>Projects</h2>
             <div className="projects">
                 {projects.map((project, index) => (
                     <Project
