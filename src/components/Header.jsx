@@ -1,48 +1,82 @@
 import { NavLink } from 'react-router-dom';
-import { useLayoutEffect } from 'react';
+import { useLayoutEffect, useCallback } from 'react';
 import { gsap } from 'gsap';
 import DarkModeToggle from './DarkModeToggle';
 
 const Header = () => {
-    useLayoutEffect(() => {
-        const navLinks = document.querySelectorAll(".nav-links li");
+     // Helper function to stop animations
+    const stopAnimations = useCallback(() => {
+        const navLinks = document.querySelectorAll(".nav-links li a");
+        navLinks.forEach(link => {
+            const parentLi = link.closest("li");
 
-        // Add hover animation for each list item
+            // Ensure any running tweens are stopped and reset inactive links
+            gsap.killTweensOf(parentLi);  
+            gsap.to(parentLi, { rotation: 0, y: 0, duration: 0.3 });
+            gsap.to(link, { textShadow: "none", duration: 0.3 });  // Reset text shadow
+        });
+    }, []);
+
+    // Function to apply animations
+    const applyAnimations = useCallback(() => {
+        const navLinks = document.querySelectorAll(".nav-links li a");
+        stopAnimations();  // First, reset everything
+
         navLinks.forEach((link) => {
-            link.addEventListener("mouseenter", () => {
-                gsap.to(link, {
-                    rotation: 3,  
-                    y: -10,  
-                    duration: 0.2, 
-                    ease: "power1.inOut",
-                    repeat: 3,  
-                    yoyo: true,  
-                });
-            });
+            const parentLi = link.closest("li");
 
-            // On mouse leave - reset to original state
-            link.addEventListener("mouseleave", () => {
+            // Apply glow effect to inactive links
+            if (!link.classList.contains('active')) {
                 gsap.to(link, {
-                    rotation: 0,  
-                    y: 0,  
-                    duration: 0.3,
-                    ease: "power2.out"
+                    textShadow: "0px 0px 20px rgba(255, 165, 0, 0.9)", // Orange glow
+                    duration: 2,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "power1.inOut",
                 });
+            }
+
+            // Apply dance effect to active link
+            if (link.classList.contains('active')) {
+                gsap.to(parentLi, {
+                    rotation: 360,
+                    y: -5,
+                    duration: 1.7,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "power1.inOut",
+                });
+            }
+        });
+    }, [stopAnimations]);
+
+    useLayoutEffect(() => {
+        const navLinks = document.querySelectorAll(".nav-links li a");
+
+        // Apply animations initially
+        applyAnimations();
+
+        // Click listener to reset and re-apply animations after a nav link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                setTimeout(() => {
+                    applyAnimations();  // Re-apply animations after click
+                }, 100);
             });
         });
-    
-        // Pulsing glow effect
+
+        // Pulsing glow effect for the title 
         const title = document.querySelector(".gradient-text");
         if (title) {
             gsap.to(title, {
-                textShadow: "0px 0px 20px rgba(255, 104, 16, 1)",
+                textShadow: "0px 0px 20px rgba(255, 104, 16, 1)", // Glow effect
                 duration: 1.5,
                 yoyo: true,
                 repeat: -1,
-                ease: "power1.inOut"
+                ease: "power1.inOut",
             });
         }
-    }, []);
+    }, [applyAnimations]);
 
     return (
         <header className="main-header">
