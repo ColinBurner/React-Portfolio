@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my official portfolio, built using React. It includes links to projects I've worked on, photos and information about me, a way to contact me and links to follow me on social media!
+This is my official portfolio, built using React. It includes links to projects I've worked on, photos and information about me, the ability to download my resume, a way to contact me and links to follow me on social media!
 
 There is also a light/dark mode toggle and a Comments section where visitors can leave a comment on my portfolio that uses Google Firebase to save the comments to the page. As admin (logged in), I can see delete buttons on each comment for easily removing comments if it gets too cluttered.
 
@@ -31,7 +31,7 @@ Under Projects you have links to github repositories and deployed applications t
 
 Under Contact you have a form you can fill out in order to send me a message directly to my email!
 
-Under Resume there is a link that currently goes to Google.com but will eventually lead to my resume when I create/update it along with my proficiencies as a developer.
+Under Resume there is a button to download my resume (resume itself needs to be completed) as a .pdf along with my proficiencies as a developer.
 
 Under Photos you will see some fun photos of me, my son and my cats!
 
@@ -55,6 +55,10 @@ This is the Contact page where you can fill out this form in order to send me an
 ![projects 1](https://github.com/user-attachments/assets/1a0fb302-d8e8-43ea-b9af-743891b33040)
 
 This is the Projects page with featured projects that I have worked on!
+
+![Screenshot 2024-09-16 215910](https://github.com/user-attachments/assets/91c7e0be-90e0-47bd-86ac-b1c0e2ae6cc8)
+
+This demonstrates a button to download my resume as a .pdf!
 
 ![comments 1](https://github.com/user-attachments/assets/9d27625c-0a88-47cb-bc3b-0e3ab1f7e4f4)
 
