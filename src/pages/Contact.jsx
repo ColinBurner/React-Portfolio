@@ -34,23 +34,27 @@ const Contact = () => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      // Send email via EmailJS
       emailjs
-        .send('service_fj1cxxt', 'template_fg02s5f', formData, 'XUyTG6lJRcAX7XPwH')
+        .send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          formData,
+          import.meta.env.VITE_EMAILJS_USER_ID
+        )
         .then((response) => {
           console.log('SUCCESS!', response.status, response.text);
           setSuccessMessage('Your message has been sent!');
-          setErrorMessage(''); 
-          setFormData({ name: '', email: '', message: '' }); 
+          setErrorMessage('');
+          setFormData({ name: '', email: '', message: '' });
         })
         .catch((err) => {
           console.log('FAILED...', err);
           setErrorMessage('Failed to send message. Please try again later.');
-          setSuccessMessage(''); 
+          setSuccessMessage('');
         });
     }
   };
-
+  
   return (
     <section className="contact-section">
       <h2>Contact Me!</h2>
